@@ -187,6 +187,7 @@ Class VbsJson
         c = Mid(str, idx, 1)
         
         If c = "}" Then
+            idx = idx + 1
             Exit Function
         ElseIf c <> """" Then
             Err.Raise 8732,,"Expecting property name"
@@ -237,6 +238,7 @@ Class VbsJson
         c = Mid(str, idx, 1)
 
         If c = "]" Then
+            idx = idx + 1
             ParseArray = values.Items
             Exit Function
         End If
