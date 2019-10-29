@@ -26,7 +26,7 @@ You can use it like:
 Dim fso, json, str, o, i
 Set json = New VbsJson
 Set fso = WScript.CreateObject("Scripting.Filesystemobject")
-str = fso.OpenTextFile("json.txt").ReadAll
+str = fso.OpenTextFile("sample.json").ReadAll
 Set o = json.Decode(str)
 WScript.Echo o("Image")("Width")
 WScript.Echo o("Image")("Height")
