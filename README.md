@@ -2,7 +2,7 @@
 
 Code taken from: http://demon.tw/my-work/vbs-json.html
 
-Given a **json.txt**:
+Given a **sample.json**:
 
 ```javascript
 {
